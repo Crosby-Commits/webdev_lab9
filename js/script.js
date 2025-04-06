@@ -1,6 +1,7 @@
 function init(){
   function myEventFunction(){
-    alert('Jamie Crosby: ');
+   var text = document.getElementById('entryinput').value;
+   alert('Jamie Crosby: ' + text);
   }
   
   var d4 = document.getElementById('entrybutton');
@@ -9,7 +10,8 @@ function init(){
     console.log('I was Clicked!');
     d4.style.backgroundColor = '#C00';
     d4.innerHTML = '<strong>Goodbye</strong>';
-    
+    var text = document.getElementById('entryinput').value;
+    document.getElementById("textoutput").textContent = text;
   });
 }
   window.addEventListener('load', init);
